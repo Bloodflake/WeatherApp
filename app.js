@@ -14,12 +14,14 @@ app.get("/", (req, res) => {
       const weatherData = JSON.parse(data);
       const temp = weatherData.main.temp;
       const weatherDescription = weatherData.weather[0].description;
-
-      console.log(temp);
-      console.log(weatherDescription);
+      const icon = weatherData.weather[0].icon;
+      const imageurl = "http://openweathermap.org/img/wn/" +icon+ "@2x.png";
+      res.write("<h1>Weather is " + weatherDescription + "</h1>");
+      res.write("<h1> The tempwrature in Delhi is" + temp + " degree Celcius </h1>");
+      res.write("<img src="+imageurl+">");
+      res.send();
     });
   });
-  res.send("Got weather report");
 });
 
 app.listen(3000, function() {
