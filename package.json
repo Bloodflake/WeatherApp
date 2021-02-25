@@ -11,7 +11,8 @@
     "url": "git+https://github.com/Bloodflake/WeatherApp.git"
   },
   "keywords": [
-    "weather"
+    "weather",
+    "open weather API"
   ],
   "author": "Sumit Patil",
   "license": "ISC",
