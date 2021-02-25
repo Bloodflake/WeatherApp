@@ -1,0 +1,25 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "weather web app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bloodflake/WeatherApp.git"
+  },
+  "keywords": [
+    "weather"
+  ],
+  "author": "Sumit Patil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bloodflake/WeatherApp/issues"
+  },
+  "homepage": "https://github.com/Bloodflake/WeatherApp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
